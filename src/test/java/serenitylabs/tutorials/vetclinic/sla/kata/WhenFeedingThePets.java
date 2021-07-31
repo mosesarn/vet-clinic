@@ -20,7 +20,8 @@ public class WhenFeedingThePets {
 
         // THEN
         hotel.getPets().forEach(
-                pet -> assertThat(pet.isWellFed(), equalTo(true))
+                pet -> assertThat(pet.isWellFed(),equalTo(true))
+
         );
     }
 }
