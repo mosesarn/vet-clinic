@@ -37,11 +37,10 @@ public class Pet {
     public boolean isWellFed() {
 
         double totalEaten = 0.0;
-
         for(Meal meal : mealsGiven) {
             if ((breed == Breed.Cat) && (meal.getFoodBrand() == PetFood.KittyKat)) {
                 totalEaten = totalEaten + meal.getAmountInGrams();
-            } else if ((breed == Breed.Dog) && (meal.getFoodBrand() == PetFood.FidosFood)) {
+            } else if ((breed == Breed.Dog) && (meal.getFoodBrand() == PetFood.FidoFood)) {
                 totalEaten = totalEaten + meal.getAmountInGrams();
             }
         }

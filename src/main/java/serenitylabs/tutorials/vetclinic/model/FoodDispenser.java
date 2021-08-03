@@ -15,14 +15,14 @@ public class FoodDispenser {
 
     static{
         BRAND_FOR_BREED.put(Breed.Cat,PetFood.KittyKat);
-        BRAND_FOR_BREED.put(Breed.Cat,PetFood.FidosFood);
+        BRAND_FOR_BREED.put(Breed.Cat,PetFood.FidoFood);
         GRAMS_PER_KILO_BY_PET.put(Breed.Dog,20);
         GRAMS_PER_KILO_BY_PET.put(Breed.Cat,10);
     }
 
 
     public Meal prepareMealFor(Pet pet) {
-        return new Meal(rightAmountOfFoodFor(pet),rightFoodFor(pet));
+        return new Meal(rightAmountOfFoodFor(pet), rightFoodFor(pet));
     }
 
     private PetFood rightFoodFor(Pet pet) {

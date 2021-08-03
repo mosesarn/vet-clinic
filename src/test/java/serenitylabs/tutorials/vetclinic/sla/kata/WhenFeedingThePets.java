@@ -1,5 +1,6 @@
 package serenitylabs.tutorials.vetclinic.sla.kata;
 
+import org.junit.Assert;
 import org.junit.Test;
 import serenitylabs.tutorials.vetclinic.APetHotel;
 import serenitylabs.tutorials.vetclinic.collections.katas.PetHotel;
@@ -21,7 +22,7 @@ public class WhenFeedingThePets {
         // THEN
         hotel.getPets().forEach(
                 pet -> assertThat(pet.isWellFed(),equalTo(true))
-
         );
     }
 }
+
