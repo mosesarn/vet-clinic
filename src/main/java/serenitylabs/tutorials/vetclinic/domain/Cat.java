@@ -5,7 +5,7 @@ import com.google.common.collect.ImmutableList;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cat {
+public class Cat extends Animal {
     private final String name;
     private final String breed;
     private final List<String> colour;
@@ -22,6 +22,7 @@ public class Cat {
         return name + " the " + (colour + " " + breed).toLowerCase();
     }
 
+
     public String getName() {
         return name;
     }
@@ -36,6 +37,12 @@ public class Cat {
 
     public static CatBuilder called(String name) {
         return new CatBuilder(name);
+    }
+
+
+    @Override
+    public String complaint() {
+        return "Meow";
     }
 
     public static class CatBuilder {
